@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>  Examen </title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header id="Inicio">
-        <h1>DEINSA HONDURAS</h1>
-        <img src="/imagenes/1.png" alt="logo" width="150" height="100">
-        <span> <strong>Telefono: </strong> 99-99-99-99</span>
-        <span> <strong>Horarios: </strong>Lunes a viernes de 8am a 5pm</span>
+    <header id="Inicio" class="bg-slate-900 text-white shadow-md py-4 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-4">
+        <h1 class="text-2xl font-bold tracking-wide">DEINSA HONDURAS</h1>
+        <img src="/imagenes/1.png" alt="logo" width="150" height="100" class="object-contain">
+        <span class="text-sm text-gray-300"> <strong>Telefono: </strong> 99-99-99-99</span>
+        <span class="text-sm text-gray-300"> <strong>Horarios: </strong>Lunes a viernes de 8am a 5pm</span>
     </header>
-    <nav>
-        <ul>
+    <nav class="bg-white shadow-md px-6 py-3 sticky top-0 z-50 flex flex-col lg:flex-row justify-between items-center gap-4">
+        <ul class="flex flex-wrap justify-center items-center gap-4 text-sm font-medium text-gray-700">
             <li><a href="#Inicio">Inicio</a></li>
             <li><a href="#Descripcion"> Descripcion </a></li>
             <li><a href="#Catalogos"> Catalogos </a></li>
@@ -22,29 +23,29 @@
             <li><a href="#Contacto">Contacto</a></li>
             <li><a href="#Equipos">Equipos</a></li>
         </ul>
-        <div>
-            <button> Cotizar por WhatsApp </button>
+        <div class="w-full lg:w-auto text-center">
+            <button class="bg-orange-500 hover:bg-emeral text-white font-semibold px-4 py-2 rounded-lg shadow transition-colors flex items-center gap-2 text-sm"> Cotizar por WhatsApp </button>
         </div>
     </nav>
     <main>
-        <section id="Descripcion">
-            <h3> HOLA, esta es mi empresa <span> DEINSA HONDURAS</span></h3>
-            <P> vendemos los mejores porductos para instalciones electricas, pide nuestro catalogo o explora en nuestro citio web</P>
+        <section class="w-full bg-blue-600 px-6 py-16 text-center shadow-lg">
+            <h3 class="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight tracking-tight"> HOLA, esta es mi empresa <span class="text-yellow-300"> DEINSA HONDURAS</span></h3>
+            <P class="text-xl md:text-2xl text-blue-50 font-medium leading-relaxed max-w-3xl mx-auto"> vendemos los mejores porductos para instalciones electricas, pide nuestro catalogo o explora en nuestro citio web</P>
         </section>
-        <section id="Catalogos">
-            <h2> Catalogos </h2>
+        <section id="Catalogos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+            <h2 class="text-3xl font-bold text-center text-slate-800 my-8 col-span-full"> Catalogos </h2>
             
-            <article>
-                <h3> Transformador Pad-Mounthes Trifasico</h3>
-                <figure>
-                    <img src="https://imgs.search.brave.com/c9QDciJ_8B7jcUL8A94m3Kh1VOX2-SLW0pRx6Q9lEJg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kZWF0/b25lcXVpcG1lbnQu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI2LzAxL3BhZC1t/b3VudC10cmFuc2Zv/cm1lci1mb3Itc2Fs/ZS0zLndlYnA" alt="Transformador" idth="150" height="150">
-                    <figcaption> Media Tension </figcaption>
+            <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col justify-between border border-gray-100">
+                <h3 class="text-xl font-bold text-slate-900 mb-4 text-center"> Transformador Pad-Mounthes Trifasico</h3>
+                <figure class="flex flex-col items-center justify-center mb-4">
+                    <img src="https://imgs.search.brave.com/c9QDciJ_8B7jcUL8A94m3Kh1VOX2-SLW0pRx6Q9lEJg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kZWF0/b25lcXVpcG1lbnQu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI2LzAxL3BhZC1t/b3VudC10cmFuc2Zv/cm1lci1mb3Itc2Fs/ZS0zLndlYnA" alt="Transformador" idth="150" height="150" class="object-cover rounded-lg mb-2">
+                    <figcaption class="text-xs font-semibold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full"> Media Tension </figcaption>
                 </figure>
-                <p> <strong> Precio: </strong> 100,000 L</p>
-                <p> <strong> Detlles: </strong> no se para que estp ing.</p>
+                <p class="space-y-2 text-gray-700 text-sm"> <strong> Precio: </strong> 100,000 L</p>
+                <p class="space-y-2 text-gray-700 text-sm"> <strong> Detlles: </strong> no se para que estp ing.</p>
             </article>
 
-             <article>
+             <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col justify-between border border-gray-100">
                 <h3> Panel solar </h3>
                 <figure>
                     <img src="https://imgs.search.brave.com/1fe0qrjHWuk-aRCoohakoqNiNf90O436OgjXxozwZGc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdC5k/ZXBvc2l0cGhvdG9z/LmNvbS8xNTc5NTkx/LzQxMjQvaS80NTAv/ZGVwb3NpdHBob3Rv/c180MTI0MzQ3OS1z/dG9jay1waG90by1z/b2xhci1wYW5lbHMu/anBn" alt="Panel solar"  idth="150" height="150">
@@ -54,7 +55,7 @@
                 <p> <strong> Detlles: </strong> nIdeal para ahorra luz en tu casa</p>
             </article>
 
-             <article>
+             <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col justify-between border border-gray-100">
                 <h3> Contadores </h3>
                 <figure>
                     <img src="https://imgs.search.brave.com/IjKRdBl9xG7XAS3PGc7MtwKMshQVWTViI15W9hEUOdM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuZS1rb25vbWlz/dGEucHQvdXBsb2Fk/cy8yMDE5LzA3LzEw/MTE5MS1jb250YWRv/ci1pbnRlbGlnZW50/ZV8xNTM3ODcxMTQy/LTQyNXgzMTguanBn" alt="Transformador" idth="150" height="150">
@@ -97,8 +98,8 @@
                         <div>
                             <button type="submit"> Calcular Presupuesto </button>
                         </div>
-                        <div class="resultado" id="resultado">
-                            <p>El total estimado de su cotización es </p><strong>L. 5,000</strong>
+                        <div>
+                            <p>El total de su cotizacion es </p><strong>5,000 L</strong>
                         </div>
                     </fieldset>
                 </form>
@@ -186,20 +187,23 @@
             </form>
         </section>
     </main>
-    <footer>
-        <div id="Contacto">
-            <h3>Informacion</h3>
-            <ul>
+    <footer class="bg-slate-900 text-white py-8 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div id="Contacto" class="space-y-2 text-center md:text-left">
+            <h3 class="text-lg font-semibold">Informacion</h3>
+            <ul class="space-y-1 text-sm text-gray-300"> 
                 <li> <strong> Direccion SPS: </strong> Bulevard del Norte, San Pedro Sula</li>
                 <li><strong>Direccion TG: </strong> Anillo perfirico, Tegusigalpa MDC</li>
                 <li><strong> Telfono: </strong> 9999-9999</li>
             </ul>
         </div>
-        <div>
+        <div class="flex items-center gap-4">
             <h3> Nuestras redes</h3>
-            <a href=""><img src="" alt="Facebook"></a>
-            <a href=""><img src="" alt="Linkelind"></a>
-            <a href=""><img src="" alt="Instagran"></a>
+            <a href="" class="hover:opacity-80 transition-opacity">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook" class="w-8 h-8"></a>
+            <a href="" class="hover:opacity-80 transition-opacity">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="Linkelind" class="w-8 h-8"></a>
+            <a href="" class="hover:opacity-80 transition-opacity">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagran" class="w-8 h-8"></a>
         </div>
         <p> &copy; 2026 Mi empresa, todos los derechos reservados</p>
     </footer>
